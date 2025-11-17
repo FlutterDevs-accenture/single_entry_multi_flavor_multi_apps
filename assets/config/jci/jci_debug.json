@@ -1,0 +1,6 @@
+{
+  "appName": "JCI Debug",
+  "primaryColor": "#0047AB",
+  "apiUrl": "https://api.debug.jci.com",
+  "logo": "assets/images/jci/jci.jpg"
+}

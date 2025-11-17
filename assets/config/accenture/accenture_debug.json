@@ -1,6 +1,6 @@
 {
   "appName": "Accenture Debug",
   "primaryColor": "#0047AB",
-  "apiUrl": "https://api.debug.accenture.com",
+  "apiUrl": "https://api.debug.demo.com",
   "logo": "assets/images/accenture/acc.jpg"
 }

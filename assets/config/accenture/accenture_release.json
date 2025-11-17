@@ -1,6 +1,6 @@
 {
   "appName": "Accenture Release",
   "primaryColor": "#0047AB",
-  "apiUrl": "https://api.accenture.com",
+  "apiUrl": "https://api.demo.com",
   "logo": "assets/images/accenture/acc_release.png"
 }

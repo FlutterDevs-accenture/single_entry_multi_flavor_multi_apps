@@ -1,0 +1,2 @@
+# single_entry_multi_flavor_multi_apps
+Multi-App Monolithic Codebase Architecture

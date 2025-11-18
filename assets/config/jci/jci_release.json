@@ -1,6 +1,8 @@
 {
   "appName": "JCI Release",
   "primaryColor": "#0047AC",
+  "buildType": "release",
+  "appCode": "JCI",
   "apiUrl": "https://api.jci.demo.com",
-  "logo": "assets/images/jci/jci_release.png"
+  "logo": "assets/jci/jci_release.png"
 }

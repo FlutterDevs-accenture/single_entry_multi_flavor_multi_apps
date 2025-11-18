@@ -1,4 +1,6 @@
 // lib/features/auth/login_screen.dart
+import 'package:ACN_App/src/accenture/home_accenture.dart';
+import 'package:ACN_App/src/jci/home_jci.dart';
 import 'package:flutter/material.dart';
 import '../../../core/di/di.dart';
 import '../../../core/behavior/app_behavior.dart';
@@ -29,7 +31,12 @@ class LoginScreen extends StatelessWidget {
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                behavior.login(emailController.text, passwordController.text);
+                print('Login pressed for ${config.appName}');
+                config.appCode == 'ACN'
+                    ? HomeAccenture()
+                    : HomeJci();
+
+               // behavior.login(emailController.text, passwordController.text);
 
               },
               child: Text(loc.translate(TextResources.login)),

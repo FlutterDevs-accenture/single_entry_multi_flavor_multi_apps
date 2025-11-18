@@ -1,6 +1,8 @@
 {
   "appName": "Accenture Release",
+  "buildType": "release",
+  "appCode": "ACN",
   "primaryColor": "#0047AB",
   "apiUrl": "https://api.demo.com",
-  "logo": "assets/images/accenture/acc_release.png"
+  "logo": "assets/accenture/acc_release.png"
 }

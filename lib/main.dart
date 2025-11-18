@@ -1,6 +1,6 @@
 // lib/app.dart
 import 'package:flutter/material.dart';
-import 'package:one_code_base/core/behavior/app_behavior.dart';
+import 'core/behavior/app_behavior.dart';
 import 'app.dart';
 import 'core/config_loader.dart';
 import 'core/di/di.dart';
@@ -33,3 +33,4 @@ Future<void> _runAccentureApp(String buildType) async {
   setupDI(config, AccentureBehavior());
   runApp(MyApp(config: config));
 }
+

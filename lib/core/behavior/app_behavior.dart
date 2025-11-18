@@ -7,6 +7,22 @@ abstract class AppBehavior {
   Future<void> signup(String email, String password);
 }
 
+class JciBehavior implements AppBehavior {
+  ApiClient get _api => getIt<ApiClient>();
+
+  @override
+  Future<void> login(String email, String password) async {
+    final res = await _api.login(email, password);
+    print('Travel login: ${res.data}');
+  }
+
+  @override
+  Future<void> signup(String email, String password) async {
+    final res = await _api.signup(email, password);
+    print('Travel signup: ${res.data}');
+  }
+}
+
 class AccentureBehavior implements AppBehavior {
 
   ApiClient get _api => getIt<ApiClient>();
@@ -26,18 +42,4 @@ class AccentureBehavior implements AppBehavior {
 
 
 
-class JciBehavior implements AppBehavior {
-  ApiClient get _api => getIt<ApiClient>();
 
-  @override
-  Future<void> login(String email, String password) async {
-    final res = await _api.login(email, password);
-    print('Travel login: ${res.data}');
-  }
-
-  @override
-  Future<void> signup(String email, String password) async {
-    final res = await _api.signup(email, password);
-    print('Travel signup: ${res.data}');
-  }
-}

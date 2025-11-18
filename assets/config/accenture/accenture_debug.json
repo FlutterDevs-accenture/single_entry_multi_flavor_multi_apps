@@ -1,6 +1,8 @@
 {
   "appName": "Accenture Debug",
   "primaryColor": "#0047AB",
+  "buildType": "debug",
+  "appCode": "ACN",
   "apiUrl": "https://api.debug.demo.com",
-  "logo": "assets/images/accenture/acc.jpg"
+  "logo": "assets/accenture/acc.jpg"
 }

@@ -1,8 +1,4 @@
 // lib/core/app_config.dart
-import 'package:get_it/get_it.dart';
-import 'app_config.dart';
-import 'behavior/app_behavior.dart';
-import '../utils/api_client.dart';
 import 'package:flutter/material.dart';
 
 class AppConfig {
@@ -10,12 +6,16 @@ class AppConfig {
   final Color primaryColor;
   final String apiUrl;
   final String logo;
+  final String appCode;
+  final String buildType;
 
   AppConfig({
     required this.appName,
     required this.primaryColor,
     required this.apiUrl,
     required this.logo,
+    required this.appCode,
+    required this.buildType,
   });
 
   factory AppConfig.fromJson(Map<String, dynamic> json) {
@@ -24,6 +24,8 @@ class AppConfig {
       primaryColor: _colorFromHex(json['primaryColor']),
       apiUrl: json['apiUrl'],
       logo: json['logo'],
+      appCode: json['appCode'],
+      buildType: json['buildType'],
     );
   }
 }

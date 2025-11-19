@@ -4,8 +4,7 @@ set BUILD_TYPE=%2
 
 call setup.bat %APP_TYPE%
 
-flutter build apk ^
-  --no-tree-shake-icons ^
+flutter run ^
   --flavor %APP_TYPE% ^
   --%BUILD_TYPE% ^
   --dart-define=APP_TYPE=%APP_TYPE% ^

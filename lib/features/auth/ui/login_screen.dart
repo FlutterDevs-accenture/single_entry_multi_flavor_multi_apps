@@ -1,6 +1,7 @@
 // lib/features/auth/login_screen.dart
-import 'package:ACN_App/src/accenture/home_accenture.dart';
-import 'package:ACN_App/src/jci/home_jci.dart';
+
+import '../../../src/accenture/home_accenture.dart';
+import '../../../src/jci/home_jci.dart';
 import 'package:flutter/material.dart';
 import '../../../core/di/di.dart';
 import '../../../core/behavior/app_behavior.dart';
